@@ -68,9 +68,9 @@ export default function SignupPage() {
     <>
       <Navbar />
       <main className="min-h-screen pt-32 pb-20 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-background/95 backdrop-blur-md"></div>
         
-        <div className="relative z-10 w-full max-w-md p-8 glass-card rounded-3xl border-brand-500/20 shadow-2xl">
+        <div className="relative z-10 w-full max-w-md p-8 bg-card rounded-3xl border border-brand-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-500/30">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8 text-white">

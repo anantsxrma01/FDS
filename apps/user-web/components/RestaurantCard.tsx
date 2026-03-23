@@ -35,12 +35,12 @@ export default function RestaurantCard({
         </div>
       </div>
 
-      <div className="p-6 flex-grow flex flex-col">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-bold tracking-tight group-hover:text-brand-400 transition-colors line-clamp-1">{name}</h3>
+      <div className="p-5 sm:p-6 flex-grow flex flex-col">
+        <div className="flex justify-between items-start mb-1 sm:mb-2">
+          <h3 className="text-lg sm:text-xl font-bold tracking-tight group-hover:text-brand-400 transition-colors line-clamp-1">{name}</h3>
         </div>
 
-        <p className="text-sm text-muted-foreground mb-4 line-clamp-1">
+        <p className="text-xs sm:text-sm text-muted-foreground mb-4 line-clamp-1">
           {tags.join(" • ")}
         </p>
 

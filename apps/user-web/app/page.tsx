@@ -81,13 +81,13 @@ export default function Home() {
       <main className="min-h-screen">
         <HeroSection />
         
-        <section className="container mx-auto px-6 max-w-7xl py-12">
-          <div className="flex items-end justify-between mb-10">
+        <section className="container mx-auto px-6 max-w-7xl py-16 md:py-12">
+          <div className="flex items-end justify-between mb-8 md:mb-10">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight mb-2">Featured Restaurants</h2>
-              <p className="text-muted-foreground">The most popular spots in Gajraula right now.</p>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Featured Restaurants</h2>
+              <p className="text-sm sm:text-base text-muted-foreground">The most popular spots in Gajraula right now.</p>
             </div>
-            <button className="hidden sm:flex items-center gap-2 text-brand-500 font-medium hover:text-brand-400 transition-colors">
+            <button className="flex items-center gap-2 text-brand-500 font-medium hover:text-brand-400 transition-colors text-sm sm:text-base">
               View All 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="w-12 h-12 border-4 border-brand-500 border-t-transparent rounded-full animate-spin"></div>
              </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {restaurants.map((restaurant: any) => (
                 <RestaurantCard
                   key={restaurant.id}
@@ -118,12 +118,12 @@ export default function Home() {
         </section>
 
         {/* Categories Section */}
-        <section className="bg-card w-full py-20 mt-12 border-y border-border">
+        <section className="bg-card w-full py-16 md:py-20 mt-12 border-y border-border">
            <div className="container mx-auto px-6 max-w-7xl">
-              <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Cuisines you'll love</h2>
-              <div className="flex flex-wrap justify-center gap-4">
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-8 md:mb-10 text-center">Cuisines you'll love</h2>
+              <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
                 {["North Indian", "South Indian", "Chinese", "Italian", "Healthy", "Desserts", "Beverages", "Street Food"].map((category) => (
-                  <button key={category} className="px-6 py-3 rounded-full border border-border bg-background hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all font-medium whitespace-nowrap">
+                  <button key={category} className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-full border border-border bg-background hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all font-medium whitespace-nowrap text-sm sm:text-base">
                     {category}
                   </button>
                 ))}
